@@ -1,1 +1,1 @@
-# GitHubStateMachineRepository
+# StateMachineRepository
