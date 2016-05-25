@@ -3,6 +3,7 @@ package states;
 import framework.*;
 
 public class StateA extends State {
+	private static final long serialVersionUID = 3L;
 
 	@Override
 	public State doAction(Event event) {
