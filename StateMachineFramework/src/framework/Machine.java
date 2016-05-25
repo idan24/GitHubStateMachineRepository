@@ -15,6 +15,7 @@ public class Machine {
 	public Machine(MachineConfig config, State defaultState) {
 		this.config = config;
 		this.state = getCurrentState(defaultState);
+		System.out.println("Machine's current state: " + this.state.getClass().getSimpleName());
 	}
 	
 	/**
@@ -35,7 +36,7 @@ public class Machine {
 		if (loadedState != null) {
 			return loadedState;
 		} else {
-			System.out.println("Could not load last saved state to a valid state object. Defining current state as default state.");
+			System.out.println("Could not load machine's last saved state. Defining current state as default state.");
 			return defaultState;
 		}
 	}
